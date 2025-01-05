@@ -36,13 +36,13 @@ body {
 
 .item_menu_text {
     text-decoration: none;
+    color: var(--fourth-color);
 }
-
-.item_menu
 
 nav {
     position: relative;
     background: var(--third-color);
+    color: var(--first-color);
     font-weight: 400;
     font-size: 0;
     display: flex;
@@ -61,8 +61,8 @@ nav .item_menu {
     height: 3.75rem;
     line-height: 3.75rem;
     text-align: center;
+    color: var(--fourth-color);
     text-decoration: none;
-    color: var(--first-color);
 }
 
 .list_menu {
@@ -133,10 +133,6 @@ nav .item_menu:nth-child(4):hover ~ .underline_menu {
 .header_menu_link {
     width: 9rem;
     flex-shrink: 0;
-}
-
-.header_menu_language {
-    width: 4.5rem;
 }
 
 
