@@ -38,6 +38,8 @@ body {
     text-decoration: none;
 }
 
+.item_menu
+
 nav {
     position: relative;
     background: var(--third-color);
@@ -60,6 +62,7 @@ nav .item_menu {
     line-height: 3.75rem;
     text-align: center;
     text-decoration: none;
+    color: var(--first-color);
 }
 
 .list_menu {
