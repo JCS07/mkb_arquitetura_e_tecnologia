@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --first-color: #52378C;
+    --second-color: #737373;
+    --third-color: #fff;
+    --fourth-color: #000;
+    --fifth-color: #A6A6A6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* height: 100vh; */
+    box-sizing: border-box;
+    background-color: var(--first-color);
+    font-family: "Montserrat", serif;
+}
+
+.header {
+    position: relative; /* Define como referência para posicionamento interno */
+    padding: 0% 1.5% 0% 1.5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5rem;
+}
+
+.item_menu_text {
+    text-decoration: none;
+    color: var(--third-color);
+}
+
+nav {
+    position: relative;
+    background: var(--fifth-color);
+    color: var(--third-color);
+    font-weight: 400;
+    font-size: 0;
+    display: flex;
+    padding: 0;
+    width: 80%;
+    border-radius: 1rem;
+}
+
+nav .item_menu {
+    font-size: 0.8rem;
+    display: inline-block;
+    position: relative;
+    padding: 0 1.25rem;
+    cursor: pointer;
+    z-index: 5;
+    min-width: 25%;
+    height: 3.75rem;
+    line-height: 3.75rem;
+    text-align: center;
+    color: var(--third-color);
+    text-decoration: none;
+}
+
+.list_menu {
+    overflow: hidden;
+    list-style: none;
+    position: absolute;
+    padding: 0;
+    width: 100%;
+    left: 0;
+    top: 3.875rem;
+}
+
+.list_menu_text {
+    text-decoration: none;
+}
+
+.list_menu > div {
+    translate: 0 -100%;
+    transition: all 0.5s 0.1s;
+    position: relative;
+}
+
+.list_menu a {
+    display: block;
+    padding: 0;
+    width: 100%;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    background: var(--second-color);
+    color: var(--third-color);
+}
+
+.list_menu a:hover {
+    background-color: var(--second-color);
+}
+
+.underline_menu {
+    height: 0.375rem;
+    background: var(--second-color);
+    position: absolute;
+    bottom: 0;
+    width: 25%;
+    z-index: 2;
+    pointer-events: none;
+    transition: 0.35s;
+}
+
+nav .item_menu:hover > .list_menu > div {
+    translate: 0;
+}
+
+nav .item_menu:nth-child(1):hover ~ .underline_menu {
+    translate: 0;
+}
+
+nav .item_menu:nth-child(2):hover ~ .underline_menu {
+    translate: 100%;
+}
+
+nav .item_menu:nth-child(3):hover ~ .underline_menu {
+    translate: 200%;
+}
+
+nav .item_menu:nth-child(4):hover ~ .underline_menu {
+    translate: 300%;
+}
+
+.header_menu_link {
+    width: 9rem;
+    flex-shrink: 0;
+}
+
+@media (max-width: 53rem) {
+    .header {
+        flex-direction: column;
+    }
+
+    nav {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .item_menu {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 1rem 0; 
+        font-size: 1rem; 
+    }
+
+    .underline_menu {
+        display: none; 
+    }
+
+    .header_menu_link {
+        margin-top: -6rem; 
+    }
+}
+
+.background_main_image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120%;
+    object-fit: cover;  /* Para garantir que a imagem cubra toda a área */
+    opacity: 0.5;  /* 50% de transparência */
+    z-index: -1;  /* Coloca a imagem de fundo atrás do conteúdo principal */
+}
+
+.main_image {
+    display: flex;
+    justify-content: center;
+    position: relative;  /* Garante que o conteúdo fique sobre a imagem de fundo */
+}
+
+@media (max-width: 53rem) {
+    .main_image {
+        margin: 2%;
+    }
+
+    .main_image img {
+        width: 75vw;
+        height: 75vw;
+    }
+}
+
+
+
+.footer {
+    background-color: var(--second-color);
+    color: var(--third-color);
+    text-align: center;
+    padding: 0.625rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.footer_title {
+    font-size: 1.5rem;
+}
+
+.footer ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 1%;
+}
+
+.footer ul li { 
+    margin: 0.625rem 0.625rem;
+}
+
+.footer ul li a {
+    color: var(--third-color);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: thin;
+}
+
+.footer ul li a:hover {
+    color: var(--second-color);
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    padding: 0.25rem;
+    width: 100%;
+}
+
+.socials img {
+    width: 3rem;
+    height: 3rem;
+}
+
+.socials a {
+    color: var(--second-color);
+    font-size: 1rem;
+}
+
+.socials a:hover {
+    color: var(--third-color);
+}
+
+.footer_contact_title {
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5%;
+    font-size: 1rem;
+    color: var(--third-color);
+    text-decoration: none;
+}
+
+.footer_contact_text {
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5%;
+    font-size: 1rem;
+    color: var(--third-color);
+    text-decoration: none;
+}
+
+.footer_contact_text:hover {
+    color: var(--second-color);
+}
+
+.footer_list {
+    font-size: 0.9rem;
+    counter-reset: var(--third-color);
+}
+
+.footer_div_text {
+    font-size: 0.75rem;
+}
+
+@media screen and (max-width: 37.5rem){
+    .footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer_contact_text {
+        padding: 0;
+    }
+}
