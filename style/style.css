@@ -222,7 +222,7 @@ nav .item_menu:nth-child(4):hover ~ .underline_menu {
 
 @media (max-width: 53rem){
     .main_presentation_text {
-        font-size: 1.25rem;
+        font-size: 1.2rem;
         top: 10%; 
         left: 50%;
         transform: translateX(-85%); 
@@ -243,7 +243,7 @@ nav .item_menu:nth-child(4):hover ~ .underline_menu {
 
 @media (max-width: 37.5rem){
     .main_presentation_text {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 
     .main_logo {
