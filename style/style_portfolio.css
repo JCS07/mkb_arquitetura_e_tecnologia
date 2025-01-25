@@ -159,6 +159,10 @@ section {
         text-align: center;
     }
 
+    .content p {
+      text-align: center;
+    }
+
     .social_image {
         width: 100%;
         height: auto;
@@ -178,10 +182,12 @@ section {
 
     .presentation h1 {
       font-size: 2rem;
+      text-align: center;
     }
 
     .presentation p {
       font-size: 1rem;
+      text-align: center;
     }
 
     .logo_presentation {
@@ -221,23 +227,23 @@ section {
   }
 
 /* APRESENTAÇÃO MKB */
-.presentation {
-  padding: 0 2rem;
-  gap: 1rem;
-  margin: 1.5rem;
-}
+  .presentation {
+    padding: 0 2rem;
+    gap: 1rem;
+    margin: 1.5rem;
+  }
 
-.presentation h1 {
-  font-size: 1.1rem;
-  text-align: center;
-}
+  .presentation h1 {
+    font-size: 1.1rem;
+    text-align: center;
+  }
 
-.presentation p {
-  font-size: 0.9rem;
-  text-align: center;
-}
+  .presentation p {
+    font-size: 0.9rem;
+    text-align: center;
+  }
 
-.logo_presentation {
-  height: 15%;
-}
+  .logo_presentation {
+    height: 15%;
+  }
 }
