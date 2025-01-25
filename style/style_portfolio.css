@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --first-color: #52378C;
+    --second-color: #737373;
+    --third-color: #fff;
+    --fourth-color: #000;
+    --fifth-color: #A6A6A6;
+}
+
+body {
+    margin: 0;
+    background: var(--fifth-color);
+    font-family: "Montserrat", serif;
+}
+  
+main {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 2px;
+}
+  
+section {
+    transform-style: preserve-3d;
+    position: relative;
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+/* CAPA E IDENTIDADE */
+.first-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 75vh;
+}
+
+.social_image {
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: left;
+    width: 50%;
+    text-align: left;
+    padding: 0 2rem;
+    margin-top: 15rem;
+}
+
+.content h1 {
+    text-align: left;
+    font-size: 3rem;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.content p {
+    text-align: justify;
+    color: var(--third-color);
+}
+
+.logo {
+    width: 75%;
+    padding-bottom: 2rem;
+}
+
+/* APRESENTAÇÃO MKB */
+.second-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 75vh;
+  align-items: center;
+}
+
+.presentation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 25rem;
+  gap: 2rem;
+  margin: 3rem;
+}
+
+.presentation h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.presentation p {
+  margin: 0;
+  font-size: 1.25rem;
+  text-align: justify;
+}
+
+.logo_presentation {
+  height: 25%;
+}
+
+/* EFEITOS PARALLAX */
+.no-parallax {
+  background-image: url("../assets/fundo_portfolio.png");
+  z-index: 999;
+}
+
+.parallax {
+    height: 40vh;
+}
+  
+.parallax::after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: translateZ(-1px) scale(1.5);
+    background-size: 100%;
+    z-index: -1;
+}
+  
+.bg::after {
+    background: url("../assets/fundo_construção.png");
+    background-size: cover;
+}
+
+/* RESPONSIVOS */
+  @media (max-width: 53rem) {
+    /* CAPA E IDENTIDADE */
+    .no-parallax {
+      background-image: none;
+      background-color: var(--fifth-color);
+    }
+
+    .first-section {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .content {
+        width: 90%;
+        text-align: center;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        padding: 0 1rem;
+    }
+
+    .content h1 {
+        text-align: center;
+    }
+
+    .social_image {
+        width: 100%;
+        height: auto;
+    }
+
+    .logo {
+        width: 80%;
+        padding-bottom: 2rem;
+    }
+
+    /* APRESENTAÇÃO MKB */
+    .presentation {
+      padding: 0 5rem;
+      gap: 2rem;
+      margin: 3rem;
+    }
+
+    .presentation h1 {
+      font-size: 2rem;
+    }
+
+    .presentation p {
+      font-size: 1rem;
+    }
+
+    .logo_presentation {
+      height: 22.5%;
+    }
+}
+
+@media (max-width: 37.5rem) {
+  /* CAPA E IDENTIDADE */
+  .no-parallax {
+    background-image: none;
+    background-color: var(--fifth-color);
+  }
+
+  .content {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      padding: 0 0.5rem;
+  }
+
+  .content h1 {
+      font-size: 1.5rem;
+  }
+
+  .content p {
+      font-size: 0.9rem;
+  }
+
+  .logo {
+      width: 80%;
+  }
+
+  .social_image {
+      width: 100%;
+      height: auto;
+  }
+
+/* APRESENTAÇÃO MKB */
+.presentation {
+  padding: 0 2rem;
+  gap: 2rem;
+  margin: 3rem;
+}
+
+.presentation h1 {
+  font-size: 1.5rem;
+}
+
+.presentation p {
+  font-size: 1rem;
+}
+
+.logo_presentation {
+  height: 15%;
+}
+}
