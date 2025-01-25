@@ -227,11 +227,13 @@ section {
 }
 
 .presentation h1 {
-  font-size: 1.5rem;
+  font-size: 1.1rem;
+  text-align: center;
 }
 
 .presentation p {
-  font-size: 1rem;
+  font-size: 0.9rem;
+  text-align: center;
 }
 
 .logo_presentation {
