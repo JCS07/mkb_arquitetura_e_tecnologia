@@ -222,8 +222,8 @@ section {
 /* APRESENTAÇÃO MKB */
 .presentation {
   padding: 0 2rem;
-  gap: 2rem;
-  margin: 3rem;
+  gap: 1rem;
+  margin: 1.5rem;
 }
 
 .presentation h1 {
@@ -235,6 +235,6 @@ section {
 }
 
 .logo_presentation {
-  height: 15%;
+  height: 10%;
 }
 }
