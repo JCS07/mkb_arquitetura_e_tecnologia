@@ -354,7 +354,7 @@ article h3 {
   .presentation {
     padding: 0 2rem;
     gap: 1rem;
-    margin: 1.5rem;
+    margin: 1.1rem;
   }
 
   .presentation h1 {
@@ -363,7 +363,7 @@ article h3 {
   }
 
   .presentation p {
-    font-size: 0.75rem;
+    font-size: 0.5rem;
     text-align: center;
   }
 
@@ -391,7 +391,7 @@ article h3 {
   }
 
   .back p {
-    font-size: 0.5rem; /* Ajusta o tamanho do texto no verso */
+    font-size: 0.25rem; /* Ajusta o tamanho do texto no verso */
   }
 
   article span {
