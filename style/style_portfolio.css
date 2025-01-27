@@ -358,12 +358,12 @@ article h3 {
   }
 
   .presentation h1 {
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     text-align: center;
   }
 
   .presentation p {
-    font-size: 0.9rem;
+    font-size: 0.75rem;
     text-align: center;
   }
 
@@ -372,14 +372,14 @@ article h3 {
   }
 
       /* CARDS SERVIÇOS */
-    .cards_service {
-    grid-template-columns: 1fr; /* Ajusta para 1 coluna */
+  .cards_service {
+    grid-template-columns: repeat(2, 1fr); /* Mantém 2 colunas */
     gap: 1rem; /* Reduz ainda mais o espaçamento */
   }
 
   article {
-    width: 12.5rem; /* Reduz largura */
-    height: 12.5rem; /* Reduz altura */
+    width: 12rem; /* Reduz largura */
+    height: 12rem; /* Reduz altura */
   }
 
   article h3 {
@@ -391,12 +391,12 @@ article h3 {
   }
 
   .back p {
-    font-size: 1rem; /* Ajusta o tamanho do texto no verso */
+    font-size: 0.5rem; /* Ajusta o tamanho do texto no verso */
   }
 
   article span {
-    width: 4rem; /* Ajusta largura do span */
-    height: 3.75rem; /* Ajusta altura do span */
+    width: 3.5rem; /* Ajusta largura do span */
+    height: 3.5rem; /* Ajusta altura do span */
     font-size: 1.5rem; /* Ajusta o tamanho do texto no span */
   }
 }
