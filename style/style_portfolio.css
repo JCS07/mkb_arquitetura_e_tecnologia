@@ -92,6 +92,7 @@ section {
 .content p {
     text-align: justify;
     color: var(--third-color);
+    font-size: 1.5rem;
 }
 
 .logo {
@@ -119,12 +120,12 @@ section {
 
 .presentation h1 {
   margin: 0;
-  font-size: 2.5rem;
+  font-size: 3rem;
 }
 
 .presentation p {
   margin: 0;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   text-align: justify;
 }
 
@@ -286,17 +287,17 @@ article h3 {
     }
 
     .presentation h1 {
-      font-size: 2rem;
+      font-size: 2.5rem;
       text-align: center;
     }
 
     .presentation p {
-      font-size: 1rem;
+      font-size: 1.5rem;
       text-align: center;
     }
 
     .logo_presentation {
-      height: 22.5%;
+      height: 30%;
     }
 
     /* CARDS SERVIÇOS */
@@ -354,7 +355,7 @@ article h3 {
   .presentation {
     padding: 0 2rem;
     gap: 1rem;
-    margin: 1.1rem;
+    margin: 1.5rem;
   }
 
   .presentation h1 {
@@ -363,7 +364,7 @@ article h3 {
   }
 
   .presentation p {
-    font-size: 0.5rem;
+    font-size: 0.9rem;
     text-align: center;
   }
 
@@ -378,8 +379,8 @@ article h3 {
   }
 
   article {
-    width: 12rem; /* Reduz largura */
-    height: 12rem; /* Reduz altura */
+    width: 10rem; /* Reduz largura */
+    height: 10rem; /* Reduz altura */
   }
 
   article h3 {
@@ -391,7 +392,7 @@ article h3 {
   }
 
   .back p {
-    font-size: 0.25rem; /* Ajusta o tamanho do texto no verso */
+    font-size: 0.625rem; /* Ajusta o tamanho do texto no verso */
   }
 
   article span {
