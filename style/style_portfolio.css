@@ -6,7 +6,9 @@
     --third-color: #fff;
     --fourth-color: #000;
     --fifth-color: #A6A6A6;
+    --sixth-color: #F2F2F2;
 }
+
 
 body {
     margin: 0;
@@ -30,6 +32,29 @@ section {
     justify-content: center;
     color: white;
 }
+
+/* MENU */
+.menu_principal {
+  position: relative;
+  height: 1.5rem; /* Ajusta a altura automaticamente ao conteúdo */
+  display: flex; /* Mantém os elementos centralizados */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Evita transbordamento */
+  padding: 20px; /* Espaçamento interno */
+  background: var(--fifth-color); /* Cor de fundo, se necessário */
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* Largura total */
+  height: 100%; /* Altura total */
+  z-index: -1; /* Mantém o fundo atrás do conteúdo */
+}
+
 
 /* CAPA E IDENTIDADE */
 .first-section {
@@ -107,6 +132,7 @@ section {
   height: 25%;
 }
 
+
 /* EFEITOS PARALLAX */
 .no-parallax {
   background-image: url("../assets/fundo_portfolio.png");
@@ -133,6 +159,85 @@ section {
     background: url("../assets/fundo_construção.png");
     background-size: cover;
 }
+
+
+/* SERVIÇOS */
+.cards_service input {
+  position: absolute;
+  scale: 0;
+}
+
+.cards_service {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+article .front, article .back {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  backface-visibility: hidden;
+  background-color: var(--third-color);
+  border-radius: 1.25rem;
+  padding: 2rem;
+  transition: 0.6s;
+  cursor: pointer;
+}
+
+article {
+  position: relative;
+  perspective: 62.5rem;
+  width: 17.5rem;
+  height: 17.5rem;
+}
+
+.back {
+  transform: rotateY(180deg);
+}
+
+.back p {
+  font-size: 1.125rem;
+  color: var(--first-color);
+}
+
+article span {
+  width: 5rem;
+  height: 4.75rem;
+  border-radius: 10%;
+  display: grid;
+  place-items: center;
+  font-size: 2rem;
+  justify-content: center;
+}
+
+input:checked ~ article .back {
+  transform: rotateY(0);
+}
+
+input:checked ~ article .front {
+  transform: rotateY(-180deg);
+}
+
+article var {
+  font-style: normal;
+  font-size: 1.75rem;
+  line-height: 1;
+  color: var(--first-color);
+}
+
+article h3 {
+  margin: 0;
+  font-weight: 500;
+  font-size: 1.15rem;
+  color: var(--first-color);
+}
+
+#sent { color: var(--fourth-color); }
+#sent span { background: var(--sixth-color) }
+
 
 /* RESPONSIVOS */
   @media (max-width: 53rem) {
@@ -193,6 +298,12 @@ section {
     .logo_presentation {
       height: 22.5%;
     }
+
+    /* CARDS SERVIÇOS */
+    .cards_service {
+      display: flex;
+      gap: 2rem;
+    }
 }
 
 @media (max-width: 37.5rem) {
@@ -246,4 +357,10 @@ section {
   .logo_presentation {
     height: 15%;
   }
+
+      /* CARDS SERVIÇOS */
+    .cards_service {
+      display: flex;
+      gap: 2rem;
+    }
 }
