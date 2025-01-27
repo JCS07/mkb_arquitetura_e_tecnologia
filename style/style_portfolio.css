@@ -92,7 +92,7 @@ section {
 .content p {
     text-align: justify;
     color: var(--third-color);
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 .logo {
@@ -125,7 +125,7 @@ section {
 
 .presentation p {
   margin: 0;
-  font-size: 1.5rem;
+  font-size: 1.125rem;
   text-align: justify;
 }
 
@@ -309,7 +309,7 @@ article h3 {
     }
 
     .back p {
-      font-size: 1rem;
+      font-size: 1.125rem;
       color: var(--first-color);
     }
   
@@ -399,17 +399,17 @@ article h3 {
   }
 
   article var {
-    font-size: 1.25rem; /* Ajusta o tamanho do texto */
+    font-size: 1.125rem; /* Ajusta o tamanho do texto */
   }
 
   .back p {
-    font-size: 0.5rem; /* Ajusta o tamanho do texto no verso */
+    font-size: 0.625rem; /* Ajusta o tamanho do texto no verso */
   }
 
   article span {
     width: 3.5rem; /* Ajusta largura do span */
     height: 3.5rem; /* Ajusta altura do span */
-    font-size: 1.5rem; /* Ajusta o tamanho do texto no span */
+    font-size: 1.25rem; /* Ajusta o tamanho do texto no span */
   }
 
   article .front, article .back {
