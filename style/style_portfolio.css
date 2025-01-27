@@ -301,8 +301,21 @@ article h3 {
 
     /* CARDS SERVIÇOS */
     .cards_service {
-      display: flex;
-      gap: 2rem;
+      grid-template-columns: repeat(2, 1fr); /* Ajusta para 2 colunas */
+      gap: 1.5rem; /* Reduz o espaçamento */
+    }
+  
+    article {
+      width: 15rem; /* Reduz largura */
+      height: 15rem; /* Reduz altura */
+    }
+  
+    article h3 {
+      font-size: 1rem; /* Ajusta o tamanho do texto */
+    }
+  
+    article var {
+      font-size: 1.5rem; /* Ajusta o tamanho do texto */
     }
 }
 
@@ -360,7 +373,30 @@ article h3 {
 
       /* CARDS SERVIÇOS */
     .cards_service {
-      display: flex;
-      gap: 2rem;
-    }
+    grid-template-columns: 1fr; /* Ajusta para 1 coluna */
+    gap: 1rem; /* Reduz ainda mais o espaçamento */
+  }
+
+  article {
+    width: 12.5rem; /* Reduz largura */
+    height: 12.5rem; /* Reduz altura */
+  }
+
+  article h3 {
+    font-size: 0.9rem; /* Ajusta o tamanho do texto */
+  }
+
+  article var {
+    font-size: 1.25rem; /* Ajusta o tamanho do texto */
+  }
+
+  .back p {
+    font-size: 1rem; /* Ajusta o tamanho do texto no verso */
+  }
+
+  article span {
+    width: 4rem; /* Ajusta largura do span */
+    height: 3.75rem; /* Ajusta altura do span */
+    font-size: 1.5rem; /* Ajusta o tamanho do texto no span */
+  }
 }
