@@ -283,18 +283,19 @@ article h3 {
 
     /* APRESENTAÇÃO MKB */
     .presentation {
-      padding: 0 5rem;
+      padding: 0 2.5rem;
       gap: 2rem;
-      margin: 3rem;
+      margin-top: 3rem;
+      margin-bottom: 3rem;
     }
 
     .presentation h1 {
-      font-size: 2rem;
+      font-size: 2.75rem;
       text-align: center;
     }
 
     .presentation p {
-      font-size: 1.125rem;
+      font-size: 1.75rem;
       text-align: center;
     }
 
@@ -309,7 +310,7 @@ article h3 {
     }
 
     .back p {
-      font-size: 1.125rem;
+      font-size: 0.75rem;
       color: var(--first-color);
     }
   
