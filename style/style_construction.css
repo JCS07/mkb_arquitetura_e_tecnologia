@@ -269,7 +269,7 @@ nav .item_menu:nth-child(4):hover ~ .underline_menu {
 }
 
 .footer_contact_text:hover {
-    color: var(--second-color);
+    color: var(--first-color);
 }
 
 .footer_list {
